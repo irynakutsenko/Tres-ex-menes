@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio If Else</title>
+</head>
+
+<body>
+    <script>
+
+        let examen1 = parseInt(prompt("¿Cuantos puntos tienes de primer examen?"));
+        let examen2 = parseInt(prompt("¿Cuantos puntos tienes de segundo examen?"));
+        let examen3 = parseInt(prompt("¿Cuantos puntos tienes de tercer examen?"));
+
+        if (examen1 >= examen2) {
+            summa1 = examen1 + examen3;
+        } else  {
+            summa1 = examen2 + examen3
+        }
+        
+        let resultado = summa1;
+
+        console.log("Valor del examen es:" + resultado);
+
+        if (resultado >= 10) {
+            console.log("Es matricula");
+        } else if (resultado < 10 && resultado >= 9) {
+            console.log("Sobresaliente.");
+        } else if (resultado < 9 && resultado >= 7) {
+            console.log("Notable.");
+        } else if (resultado < 7 && resultado >= 6) {
+            console.log("Bien.");  
+        } else if (resultado < 6 && resultado >= 5) {
+            console.log("Suficiente.");
+        }   else if (resultado < 5 && resultado >= 0) {
+            console.log("Suspenso.");
+        }
+        
+    </script>
+</body>
+
+</html>
